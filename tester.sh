@@ -4,10 +4,10 @@
 # ===== Detecta checker =====
 if [[ -x ./checker_linux ]]; then
   CHECKER=./checker_linux
-elif [[ -x ./checker_Mac ]]; then
+elif [[ -x ./checker_OS ]]; then
   CHECKER=./checker_Mac
 else
-  echo "ERRO: checker não encontrado (checker_linux / checker_Mac)."
+  echo "ERRO: checker não encontrado (checker_linux / checker_OS)."
   exit 1
 fi
 
@@ -68,7 +68,7 @@ count_ok=0
 count_ko=0
 count_above_error=0
 fails_file="fails_push_swap.txt"
-> "$fails_file"
+: > "$fails_file"
 
 echo -e "${BLUE}Testando push_swap $num_tests vezes com $numbers números aleatórios...${RESET}"
 echo "Usando checker: $CHECKER"

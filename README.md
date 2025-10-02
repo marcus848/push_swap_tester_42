@@ -7,15 +7,30 @@ Ele executa várias rodadas com números aleatórios, mede a quantidade de movim
 
 ## 🔧 Instalação
 
-1. Clone ou copie este script (`tester.sh`) para a pasta onde está o seu `push_swap` e o `checker_linux` ou `checker_OS`.
+#### Opção 1: Clonar o repositório
 
-   ```bash
+```bash
    git clone https://github.com/marcus848/push_swap_tester_42.git
    cd push_swap_tester_42
    chmod +x tester.sh
-    ```
+```
+#### Opção 2: Baixar apenas o tester.sh
 
-2. Certifique-se de que os binários estão presentes:
+Você pode baixar somente o script pelo link direto do GitHub:
+
+- Com curl:
+```bash
+curl -o tester.sh https://raw.githubusercontent.com/marcus848/push_swap_tester_42/main/tester.sh
+chmod +x tester.sh
+```
+
+- Com wget:
+```bash
+wget -O tester.sh https://raw.githubusercontent.com/marcus848/push_swap_tester_42/main/tester.sh
+chmod +x tester.sh
+```
+---
+- OBS: Certifique-se de que os binários estão presentes:
 
    * `./push_swap`
    * `./checker_linux` **ou** `./checker_OS`
